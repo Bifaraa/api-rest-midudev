@@ -1,0 +1,29 @@
+### Recuperar todas las peliculas
+GET http://localhost:3000/movies
+
+### Recueperar una pelicula por id
+GET http://localhost:3000/movies/5ad1a235-0d9c-410a-b32b-220d91689a08
+
+### Recuperar todas las peliculas por genero
+GET http://localhost:3000/movies?genre=action
+
+### Crear una película con POST
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+  "title": "nueva pelicula",
+  "year": "12121",
+  "director": "adssd",
+  "duration": 123,
+  "genre": ["asasd","gfdgd","gtrgdf"]
+}
+
+### acutalizar una pelicula
+
+PATCH http://localhost:3000/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+Content-Type: application/json
+
+{
+  "year": 2002
+}
